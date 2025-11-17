@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE payara-web-app PUBLIC "-//Payara//DTD Payara Server 5 Servlet Application 4.0//EN" "https://docs.payara.fish/schemas/payara-web-app_4_0.dtd">
+<payara-web-app>
+    <class-loader delegate="false"/>
+
+    <resource-ref>
+        <res-ref-name>jdbc/__default</res-ref-name>
+        <jndi-name>jdbc/__default</jndi-name>
+    </resource-ref>
+
+    <persistence-context-ref>
+        <persistence-context-ref-name>fish.payara.support.jmstest.MessageEJB/em</persistence-context-ref-name>
+        <persistence-unit-name>SomethingPU</persistence-unit-name>
+    </persistence-context-ref>
+
+</payara-web-app>
